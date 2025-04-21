@@ -135,6 +135,10 @@ img {
 
 }
 
+.cross{
+    display:none;
+}
+
 .partionBox {
     background-color: #FF7E3A;
     width: 1px;
@@ -461,6 +465,7 @@ img {
     }
 
     .cross {
+        display:block;
         position: absolute;
         right: 0;
         top: 10px;
