@@ -1,0 +1,54 @@
+.menudimension {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+
+}
+
+
+
+.menudimension:hover {
+    color: orange;
+    font-size: 20px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.control{
+    border: none;
+    background: none;
+    width: 40px;
+    height: 40px;
+    
+    object-fit: contain;
+ transform: scale(1.5);
+}
+
+.tooltip{
+    display: none;
+    width:220px;
+    background-color:  orange;
+    text-align: center;
+    border-radius: 15px;
+    position: absolute;
+    margin-left: 120px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.tooltip::after{
+    content:" ";
+    border-style: solid;
+    position: absolute;
+    right:  100%;
+    margin-top: -35px;
+    border-width: 6px;
+    border-color: transparent  orange transparent transparent;
+}
+
+.btncontainer:hover .tooltip{
+    display: block;
+    opacity: 1;
+}
